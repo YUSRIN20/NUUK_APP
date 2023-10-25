@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUUK WEBAPP</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4d0926afa3.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+ 
+ *{
+     font-family: 'Dosis', sans-serif;
+     font-weight: 450;
+ }
+ body {
+    @media (max-width: 400px) {
+        margin: 29px;
+    }
+}
+ body .pn9{
+     background-color: rgb(247,248,252);
+ }
+ .pnsec1{
+     width:90%;
+     margin:auto;
+     padding-top:19px
+ }
+ .pndiv1{
+     background-image: linear-gradient(76deg, rgba(193, 195, 204, 0.83) 35%, rgba(193, 195, 204, 0.28) 65%), url("https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg");
+     height:100vh;
+     width:100%;
+     background-attachment: fixed;
+     background-size: cover;
+     position: relative;
+ }
+ .pnnav1{
+     background-color: #FFFFFF;
+     position: relative;
+     height:99px;
+ }
+ .pnnav1:hover,.pndiv71:hover,.pndiv211:hover,.pndiv23:hover{
+     cursor: pointer;
+ }
+ .pnnuuk{
+     background-color: #E47312;
+     padding: 19px;
+     width:150px;
+     position: absolute;
+     text-align: center;   
+ }
+ .pnimg{
+     width:60%;
+     margin:29px auto
+ }
+ .pndiv2{
+     display:flex;
+     justify-content: flex-end;
+     align-items: center;
+     height: 96px;
+ }
+ .pnul{
+     display:flex;
+     justify-content: space-between;
+     margin:0px 3px;
+     align-items: center;
+ }
+ .pnli{
+    padding: 40px 9px;
+    position: relative;
+ }
+ .pndiv4{
+     background-color: white;
+     position: absolute;
+     display: none;
+     padding:19px;
+     top: 98px;
+     min-width: 131px;
+ }
+ .pnp{
+     color:rgb(163, 154, 154);
+     width:100%;
+     padding: 9px;
+     font-size: 14px;
+ }
+ .pnp:hover{
+     color: #E47312;
+     background-color:#ebe3e3
+ }
+ .pnli:hover .pndiv4,.pnid9:hover::after,.pndiv211:hover::after,.pndiv23:hover::after{
+     display:block
+ }
+ #pna1{
+     color:  #E47312;
+     text-decoration: none;
+ }
+ 
+ .pnli:hover::before,.pnli:hover::after{
+     height: 39px;
+ }
+ .pnli:hover{
+     color: #E47312;
+ }
+ .pnbtn1{
+     background-color: #E47312;
+     text-align: center; 
+     padding: 42px 29px;
+     border:0px;
+     color: white;
+     cursor: pointer;
+ }
+ #pnid1{
+     display: none;
+     text-align: center; 
+     padding: 45px 19px;
+     border:0px;
+ }
+ .pn1{
+     height: 2px;
+     width: 28px;
+     background-color: black;
+     margin: 9px 0px;
+ }
+ .pnbtn1:hover{
+     background-color:rgb(233,138,56)
+ }
+ .pnh1{
+     color: white;
+     font-size: 70px;
+     width:65%;
+     margin-bottom: 0px;
+     margin-top: 29px;
+ }
+ .pnp1{
+     color: white;
+     width:79%;
+     margin-top: 12px;
+ }
+ #pnbtn2{
+     padding: 23px 29px;
+     margin-top: 25px;
+ }
+ .pndiv6{
+     position: absolute;
+     display: flex;
+     width:70%;
+     padding:45px 29px;
+     background-image: linear-gradient(189deg,#e47314,#ff6361);
+     right: 0px;
+     box-sizing: border-box;
+     bottom: -5%;
+ }
+ .pnsec2{
+     position: relative;
+ }
+ .pn2{
+     text-align: center;
+     color: white;
+     margin: 12px 0px;
+     font-size: 12px;
+ }
+ .pnsec2  p{
+     color: hsla(0, 0%, 100%, 0.7)
+ }
+ .pnid2 { 
+     display: flex;
+     justify-content: center;
+     margin-top: 14px;
+ }
+ .pnid9{
+     position: relative;
+     cursor:pointer;
+ }
+ .pnid9::after {
+     content: '';
+     position: absolute;
+     height: 2px;
+     width: 100%;
+     background-color: #FFFFFF;
+     left: 0px;
+     top:19px;
+     display: none;
+ }
+ .pndiv7{
+     text-align: center;
+     width:5%;
+     position: absolute;
+     right: 0px; 
+     background-color: rgb(10,18,41);
+     padding: 19px 5px;
+     bottom: 195px;
+     box-sizing: border-box;
+ }
+ .pndiv71{
+     width: 80%;
+     margin: 48% auto;
+     text-align: center;
+ }
+ hr{
+     background-color:rgb(45,51,71);
+     height:1px;
+     border: 0px;
+     width: 79%;
+ }
+ .pndiv21{
+     padding: 9% 5%;
+ }
+ .pnsec3{
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 39px;
+ }
+ .pnh11{
+     position: absolute;
+     color:rgba(193, 195, 204, 0.9);
+     top:-149px;
+     left:-50px;
+     font-size: 120px;
+     z-index: 1;
+     color: rgba(241, 241, 247, 0.4);
+     letter-spacing: 2px;
+ }
+ .pnh12{
+     font-size: 39px;
+     z-index: 1;
+     position: relative;
+     letter-spacing: 1px;
+     line-height: 29px;
+ }
+ .works-button{
+    right: 5%;
+ }
+ .pndiv211{
+     position: relative;
+     color: #919198;
+     font-size: 13px;
+     letter-spacing: 1px;
+ }
+ .pndiv211::after{
+     position: absolute;
+     content: '';
+     height:2px;
+     width:100%;
+     background-color: #e47314;
+     bottom:-9px;
+     display: none;
+ }
+ .pnsec4{
+     display: flex;
+     justify-content: space-between;
+ }
+ .pndiv22{
+     width: 24%;
+     padding:2% 1% 2% 0%;
+ }
+ .pnimg1{
+     width: 30%;
+     height: 25%;
+     padding:2px;
+     box-sizing: border-box;
+ }
+ .pnh13{
+     font-weight: 100;
+     letter-spacing: 1px;
+     line-height: 19px;
+     margin-bottom: 0px;
+     font-size: 14px;
+ }
+ .pnp2{
+     color: #919197;
+     font-size: 13px;
+     line-height: 25px;
+     margin-bottom: 29px;
+ }
+ .pndiv23{
+     color: #919197;
+     position: relative;
+     font-size: 14px;
+ }
+ .pndiv23::after{
+     position: absolute;
+     content: '';
+     height:2px;
+     width:100%;
+     background-color: #e47314;
+     bottom:-9px;
+     left: 0px;
+     display: none;
+ }
+ .pnsec5{
+     margin-top: 100px;
+     display: flex;
+ }
+ .pnimg2{
+    padding: 9px 9px 9px 0px; 
+    width:50%;
+    box-sizing: border-box;
+ }
+ .pndiv31{
+     width:50%;
+     box-sizing: border-box;
+     position: relative;
+     padding-left: 69px;
+ }
+ #pnid3{
+     width:90%;
+     margin: 95px auto auto 0px;
+ }
+ #pnh14{
+     right: 0px;
+     left:0px
+ }
+ .pndiv41{
+     color: #E47312;
+     font-size: 59px;
+ }
+ .pnp3{
+     padding: 0% 19% 0% 0%;
+     color: #919197;
+     font-size: 17px;
+     line-height: 25px;
+ }
+ .pnsection1{
+     padding:25px 0px 25px 18px
+ }
+ .pndiv8{
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     padding-right: 18px;
+     flex-wrap: wrap;
+ }
+ .pndiv81{
+     top:-131px;
+     left: 3%;
+ }
+ .sub-text{
+    left: 5.2%;
+    
+ }
+
+ .pncl1{
+     width:32%;
+     position: relative;
+     margin-bottom: 2%;
+ }
+ .pncl1 img{
+     width:100%
+ }
+ .pnbg1{
+     background-color: rgba(0, 0, 0, 0.3);
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     opacity: 0;
+     transition: opacity .2s;
+     top:0px;
+     left:0px;
+     right: 0px;
+     bottom: 0px;
+ }
+ .pnbg1:hover{
+     opacity: 1;
+     cursor: pointer;
+ }
+ .pncl2{
+     background-image: linear-gradient(189deg,#e47314,#ff6361); 
+     color: #fff;
+     font-size: 12px;
+     line-height: 18px;
+     font-weight: 500;
+     text-align: center;
+     letter-spacing: 1px;
+     display: flex;
+     align-items: center;
+     border-radius: 285px;
+     width: 79px;
+     height: 79px;
+ }
+ .pnsection2{
+     background-image: linear-gradient(to right,#e47314,#ff6361); 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 39px;
+ }
+ .pnh5{
+     color: #FFFFFF;
+     font-size: 39px;
+     margin-bottom: 29px;
+     line-height: 37px;
+ }
+ .pnp4{
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+ }
+ #pnp5{
+     margin-top: 59px;
+ }
+ .pndivi1{
+     width:100%
+ }
+ .pndivi11{
+     background-color:#E47312;
+     position: absolute;
+     right: 0px;
+     z-index: 1;
+     width: 29%;
+     bottom: 0px
+ }
+ .pndivi2{
+     background-color: #FFFFFF;
+     padding: 9%;
+     box-sizing: border-box;
+     position: relative;
+ }
+ .pnhr{
+     background-color: #bdb9b9;
+ }
+ .pndivi3{
+     position:relative;
+     width: 100%;
+ }
+ .pnhead1{
+     width:69%;
+ }
+ .pnsection3{
+     margin-top: 100px;
+ }
+ .pndivis1{
+     display: flex;
+ }
+ .pndivi4{
+     width: 44%;
+     padding: 24% 24% 24% 0%;
+     display: flex;
+     align-items: center;
+ }
+ .pndivi41{
+     width:56%;
+     position:relative
+ }
+ .pndivi42{
+     padding: 0px 2%;
+     display: flex;
+ }
+ .pnsect1{
+     width: 50%;
+     margin: 10% 3% 15% 1%;
+ }
+ .pndivi5{
+     position: relative;
+     background-color: #fff;
+     width:100%;
+     padding: 10%;
+     box-sizing: border-box;
+     margin-bottom: 15%;
+ }
+ .pndivi43{
+     background-image: linear-gradient(189deg,#e47314,#ff6361);
+     color: #fff;
+     font-size: 59px;
+     border-radius: 285px;
+     width: 59px;
+     height: 59px;
+     position: absolute;
+     top:-29px;
+     left:79px;
+     text-align: center;
+     box-sizing: border-box;
+     padding-top: 9px;
+ }
+ .pnh6{
+     text-align: center;
+     margin-bottom: 4px;
+     font-size: 15px;
+ }
+ .pnpar1{
+     text-align: center;
+     color: rgb(189,189,206);
+     margin-top: 0px;
+     font-size: 15px;
+ }
+ .pnpar2{
+     color: #919197;
+     text-align: center;
+     font-size: 15px;
+ }
+ .pnsect2{
+     width: 50%;
+     margin: 29% 1% 0% 3%;
+ }
+ .pncl3{
+     width: 32%;
+     background-image: linear-gradient(153deg,#e47312, #ff6361);
+     position: relative;
+ }
+ .pncl4{
+     padding: 9% 19% 9% 9%;
+ }
+ .pncl3:hover,.pndivi7:hover,.pnn{
+     cursor: pointer;
+ }
+ .pnhead2{
+     color: #FFFFFF;
+     margin: 0px;
+     font-size: 19px;
+     letter-spacing: 1px;
+     font-weight: bold;
+ }
+ .pnpar3{
+     color: hsla(0, 0%, 100%, 0.7);
+     font-size: 15px;
+     line-height: 23px;
+ }
+ .pndivi6{
+     position: relative;
+     margin-top: 9px;
+     color: #FFFFFF;
+     font-size: 13px;
+     font-weight: bold;
+ }
+ .pnabs1{
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     color: #FFFFFF;
+ }
+ .pnbg2{
+     background-image: linear-gradient(45deg, #ff6361, #e47312);
+     padding:25px;
+     font-size: 29px;
+ }
+ .pnbg3{
+     background-color: #FFFFFF;
+     color: #9d9da5;
+     font-size: 15px;
+     padding: 18px 24px;
+     font-weight: bold;
+ }
+ .pnsection4{
+     background-image: linear-gradient(to left, #ff6361, #e47312);
+     padding:5%;
+     display: flex;
+     justify-content: space-between;
+     color: #FFFFFF;
+     font-weight: bold;
+ }
+ .pncl10{
+     padding: 12px 0px;
+ }
+ .pndivi7{
+     display: flex;
+     width:75%;
+ }
+ .pncl5{
+     width:20%;
+     text-align: center;
+     padding: 12px;
+ }
+ .pndiv9{
+     margin:0px 5%;
+     background-color: #0a1229;
+     position: relative;
+     padding: 7% 9% 29% 5%;
+     display: flex;
+     justify-content: space-between;
+ }
+ .pndiv10{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .pn3{
+     width:30%;
+ }
+ .pnh7{
+     white-space: nowrap;
+     margin-right: 38px;
+     color: #FFFFFF;
+     font-size: 17px;
+ }
+ .pnhr1{
+     height: 1px;
+     background-color: #ff6361;
+ }
+ .pnp9{
+     color: #FFFFFF;
+     padding-right: 5%;
+     font-size: 17px;
+ }
+ .pncl9{
+     margin-top:14px;
+     font-size: 13px;
+ }
+ .pndisp3{
+     display: flex;
+ }
+ .pncol1{
+     color: #FFFFFF;
+ }
+ .pnimg3{
+     width: 20px;
+     margin-right: 9px;
+ }
+ .pndisp4{
+     color: hsla(0, 0%, 100%, 0.7);
+     margin-left: 30px;
+     margin-top: 4px;
+ }
+ .pnn{
+     bottom: 0px;
+ }
+ @media(max-width:400px){
+     body{
+         margin:0px
+     }
+     .pnsec1{
+         padding-top: 0px;
+     }
+     .pnnav1{
+         margin:0px -6%;
+         height: 83px;
+     }
+     .pnnuuk{
+         padding:0px
+     }
+     .pnul{
+         display:none
+     }
+     .pnh1{
+         font-size: 40px;
+         margin-top: 109px;
+     }
+     .pnp1{
+         font-size: 19px;
+     }
+     .pndiv2{
+         height: 83px;
+     }
+     #pnbtn2{
+         display: block;
+     }
+     .pndiv6{
+         display: none;
+     }
+     .pndiv7{
+         width: 19%;
+         bottom: 0px;
+         padding: 0px;
+     }
+     #pnid1{
+         display: block;
+     }
+     .pnbtn1{
+         display: none;
+     }
+     .pnsec3,.pnsec4,.pnsec5,.pndivis1,.pndivi42,.pnsection4,.pndivi7,.pndiv9{
+         flex-wrap: wrap;
+     }
+     .pnh11{
+         display:none
+     }
+     .pnh12{
+         font-size: 29px;
+     }
+     .pndiv22{
+         width: 100%;
+         margin-bottom: 19px;
+     }
+     .pnimg1{
+         width: 20%;
+     }
+     #pnid3,.pnimg2{
+         width: 100%;
+         margin-top: 0px
+     }
+     .pndiv31{
+         width: 100%;
+         padding-left: 0px;
+     }
+     .pndiv91,.pndivi4,.pndivi41,.pncl1,.pnsect1,.pnsect2,.pncl3,.pncl5,.pndivi7,.pn3{
+         width: 100%;
+     }
+     .pnsection2{
+         padding: 5%;
+     }
+     .pnp4{
+         text-align: start;
+     }
+     .pnid2{
+         justify-content: flex-start;
+     }
+     .pndivis1{
+         grid-template-rows: 100%;
+     }
+     .pndivi4{
+         padding-right: 0px;
+     }
+     .pndivi42{
+         padding: 0px 0% 0px 2%;
+     }
+     .pndivi43{
+         left: 131px;
+     }
+     .pnsect2{
+         margin: -13% 3% 15% 1%;
+     }
+     .pnsection3{
+         margin-top: 0px;
+     }
+     .pncl3,.pn3{
+         margin-bottom: 15%;
+     }
+     .pncl10{
+         width: 100%;
+         text-align: center;
+     }
+     .pndiv9{
+         margin: 0%;
+     }
+     .pndivis2{
+         width: 90%;
+         margin: auto;
+     }
+     .pnid9::after{
+         display: block;
+     }
+     .pnid91::after{
+         display: none;
+     }
+ }
+</style>
+<body >
+    <div>
+        <div class="pn9">
+            <div class="pndiv1">
+                <section class="pnsec1">
+                    <nav class="pnnav1">
+                        <div class="pnnuuk"><img class="pnimg"
+                                src="https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-white.png" /></div>
+                        <div class="pndiv2">
+                            <section class="pnul">
+                                <div class="pnli"><a href="#" id="pna1">HOME</a></div>
+                                <div class="pnli">PROJECTS</div>
+                                <div class="pnli">ABOUT</div>
+                                <div class="pnli">SERVICES</div>
+                                <div class="pnli">BLOG</div>
+                                <div class="pnli"><span>PAGES</span>
+                                    <div class="pndiv4">
+                                        <p class="pnp">404 ERROR PAGE</p>
+                                        <p class="pnp">PROTECTED PAGE</p>
+                                        <p class="pnp">STYLE GUIDE</p>
+                                        <p class="pnp">LICENSING</p>
+                                    </div>
+                                </div>
+                                <div><i class="fa-solid fa-caret-down" style="color: #979aa1;padding: 42px 9px"></i></i>
+                                </div>
+                            </section>
+                            <button class="pnbtn1">GET FREE QUOTE</button>
+                            <div id="pnid1">
+                                <div class="pn1"></div>
+                                <div class="pn1"></div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="pndiv5">
+                        <h1 class="pnh1">YOU DREAM. WE CREATE.</h1>
+                        <p class="pnp1">We turn your ideas to reality, we don't stop until you're satisfied.</p>
+                        <button class="pnbtn1" id="pnbtn2">GET FREE QUOTE</button>
+                    </div>
+                </section>
+                <div class="pndiv6">
+                    <section class="pnsec2" style="width: 39%">
+                        <div class="pn2"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/phone.svg" width=9%>
+                        </div>
+                        <div class="pn2"><b>PHONE NUMBER</b></div>
+                        <p class="pn2">1-800-506-266</p>
+                        <p class="pn2">1-100-777-800</p>
+                    </section>
+                    <section class="pnsec2" style="width: 30%">
+                        <div class="pn2"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/mail.svg" width=9% />
+                        </div>
+                        <div class="pn2"><b>CONTACT</b></div>
+                        <p class="pn2">contact@nuuk.com</p>
+                        <p class="pn2">info@nuuk.com</p>
+                    </section>
+                    <section class="pnsec2" style="width: 40%">
+                        <div class="pn2"><img src=" https://nuuk-e3eaa.firebaseapp.com/assets/img/clock.svg" width=9% />
+                        </div>
+                        <div class="pn2"><b>OPENING TIMES</b></div>
+                        <p class="pn2">Mon - Sat 8:00 - 17:30, Sunday - Closed</p>
+                        <div class="pn2 pnid2">
+                            <div class="pnid9">FIND ON MAP</div>
+                        </div>
+                    </section>
+                </div>
+                <div class="pndiv7">
+                    <div class="pndiv71"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/facebook-logo.png"
+                            width="15px" height="15px" />
+                        <hr>
+                    </div>
+                    <div class="pndiv71"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/twitter-logo.png"
+                            width="15px" height="15px" />
+                        <hr>
+                    </div>
+                    <div class="pndiv71"><img src=" https://nuuk-e3eaa.firebaseapp.com/assets/img/linkedin-logo.png"
+                            width="15px" height="15px" />
+                        <hr>
+                    </div>
+                    <div class="pndiv71"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/instagram-logo.png"
+                            width="15px" height="15px" /></div>
+                </div>
+            </div>
+            <div class="pndiv21">
+                <section class="pnsec3">
+                    <h1 class="pnh11">SERVICES</h1>
+                    <h1 class="pnh12">OUR SPECIALIZATION</h1>
+                    <div class="pndiv211">VIEW ALL SERVICES</div>
+                </section>
+                <section class="pnsec4">
+                    <div class="pndiv22">
+                        <div class="pnimg1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/brickwall.svg"  width=60/>
+                        </div>
+                        <h4 class="pnh13">RENOVATION</h4>
+                        <p class="pnp2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                            in eros elementum tristique.</p>
+                        <span class="pndiv23">LEARN MORE</span>
+                    </div>
+                    <div class="pndiv22">
+                        <div class="pnimg1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/set-square.svg"  width=60/>
+                        </div>
+                        <h4 class="pnh13">ARCHITECTURE</h4>
+                        <p class="pnp2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                            in eros elementum tristique.</p>
+                        <span class="pndiv23">LEARN MORE</span>
+                    </div>
+                    <div class="pndiv22">
+                        <div class="pnimg1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/toolbox.svg"
+                                width=60 /></div>
+                        <h4 class="pnh13">CONSTRUCTION</h4>
+                        <p class="pnp2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                            in eros elementum tristique.</p>
+                        <span class="pndiv23">LEARN MORE</span>
+                    </div>
+                    <div class="pndiv22">
+                        <div class="pnimg1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/paint-roller.svg"   width=60/>
+                         </div>
+                        <h4 class="pnh13">FINANCIAL RESULTS</h4>
+                        <p class="pnp2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                            in eros elementum tristique.</p>
+                        <span class="pndiv23">LEARN MORE</span>
+                    </div>
+                </section>
+                <section class="pnsec5">
+                    <div class=" pnimg2">
+                        <div id="pnid3"><img width=100% height=100%
+                                src="https://nuuk-e3eaa.firebaseapp.com/assets/img/serv-1.jpg" /></div>
+                    </div>
+                    <div class="pndiv31">
+                        <h1 class="pnh11" id="pnh14">ABOUT</h1>
+                        <h1 class="pnh12">WHO WE ARE</h1>
+                        <p class="pnp2">Based on collective work and shared knowledge, Nuuk aims to favor dialogue and
+                            debate, to transform individual knowledge into increased creative potential.
+                            </br></br>
+                            Our studio is a architecture practice based in NY and Paris. Today, it includes 150
+                            architects, urban planners, landscape and interior designers of 25 different nationalities.
+                            The company principle of Architecture-Studio is the collective conception. From the very
+                            beginning, the practice has believed in the virtues of exchange, crossing ideas, common
+                            effort, shred knowledge.</p>
+                        <span class="pndiv23">MEET THE TEAM</span>
+                    </div>
+                </section>
+                <section class="pnsec5">
+                    <div class="pndiv22">
+                        <div class="pndiv41">170</div>
+                        <p class="pnp3">Employer with over 10 years of experience</p>
+                    </div>
+                    <div class="pndiv22">
+                        <div class="pndiv41">10</div>
+                        <p class="pnp3">Years experience in construction industries</p>
+                    </div>
+                    <div class="pndiv22">
+                        <div class="pndiv41">690</div>
+                        <p class="pnp3">Residential premises completed in 2019</p>
+                    </div>
+                    <div class="pndiv22">
+                        <div class="pndiv41">7.1</div>
+                        <p class="pnp3">Milion dollar value on investments</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="pnsection1 pn9">
+            <div class="pnsec3">
+                <h1 class="pnh11 pndiv81">PROJECTS</h1>
+                <h1 class=" sub-text pnh12 pndiv91">OUR WORK</h1>
+                <div class="pndiv211 works-button">VIEW ALL WORKS</div>
+            </div>
+            <div class="pndiv8">
+                <div class="pncl1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-1.jpg" />
+                    <div class="pnbg1">
+                        <div class="pncl2">VIEW PROJECT</div>
+                    </div>
+                </div>
+                <div class="pncl1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-4.jpg" />
+                    <div class="pnbg1">
+                        <div class="pncl2">VIEW PROJECT</div>
+                    </div>
+                </div>
+                <div class="pncl1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-3.jpg" />
+                    <div class="pnbg1">
+                        <div class="pncl2">VIEW PROJECT</div>
+                    </div>
+                </div>
+                <div class="pncl1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-6.jpg" />
+                    <div class="pnbg1">
+                        <div class="pncl2">VIEW PROJECT</div>
+                    </div>
+                </div>
+                <div class="pncl1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-5.jpg" />
+                    <div class="pnbg1">
+                        <div class="pncl2">VIEW PROJECT</div>
+                    </div>
+                </div>
+                <div class="pncl1"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-2.jpg" />
+                    <div class="pnbg1">
+                        <div class="pncl2">VIEW PROJECT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pnsection2 pn9">
+            <div class="pndisp1">
+                <h1 class="pnh5">LET'S MAKE SOMETHING GREAT TOGETHER</h1>
+                <p class="pnp4">Get in touch with us and send some basic info for a quick quote.</p>
+                <div class="pn2 pnid2" id="pnp5">
+                    <div id="pnid9">GET FREE QUOTE</div>
+                </div>
+            </div>
+        </div>
+        <div class="pndiv21 pn9">
+            <section class="pnsec3">
+                <h1 class="pnh11">TEAM</h1>
+                <h1 class="pnh12 pndiv91">PROFESSIONALS</h1>
+                <div class="pndiv211">ABOUT US</div>
+            </section>
+            <section class="pnsec4">
+                <div class="pndiv22">
+                    <div class="pndivi3">
+                        <div class="pndivi1"><img width="100%"
+                                src="https://nuuk-e3eaa.firebaseapp.com/assets/img/team-1.jpg" /></div>
+                        <div class="pndivi11">
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/facebook-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/twitter-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src=" https://nuuk-e3eaa.firebaseapp.com/assets/img/linkedin-logo.png" width="15px"
+                                    height="15px" />
+                            </div>
+                        </div>
+                        <div class="pndivi2">
+                            <h1 class="pnh13 pnhead1">PHILIP BROWER</h1>
+                            <p class="pnp2 pnhead1">Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pndiv22">
+                    <div class="pndivi3">
+                        <div class="pndivi1"><img width="100%"
+                                src="https://nuuk-e3eaa.firebaseapp.com/assets/img/team-2.jpg" /></div>
+                        <div class="pndivi11">
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/facebook-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/twitter-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src=" https://nuuk-e3eaa.firebaseapp.com/assets/img/linkedin-logo.png" width="15px"
+                                    height="15px" />
+                            </div>
+                        </div>
+                        <div class="pndivi2">
+                            <h1 class="pnh13 pnhead1">JOHN WICK</h1>
+                            <p class="pnp2 pnhead1">Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pndiv22">
+                    <div class="pndivi3">
+                        <div class="pndivi1"><img width="100%"
+                                src="https://nuuk-e3eaa.firebaseapp.com/assets/img/team-3.jpg" /></div>
+                        <div class="pndivi11">
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/facebook-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/twitter-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src=" https://nuuk-e3eaa.firebaseapp.com/assets/img/linkedin-logo.png" width="15px"
+                                    height="15px" />
+                            </div>
+                        </div>
+                        <div class="pndivi2">
+                            <h1 class="pnh13 pnhead1">JIMMY MCGILL</h1>
+                            <p class="pnp2 pnhead1">Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pndiv22">
+                    <div class="pndivi3">
+                        <div class="pndivi1"><img width="100%"
+                                src="https://nuuk-e3eaa.firebaseapp.com/assets/img/team-4.jpg" /></div>
+                        <div class="pndivi11">
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/facebook-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src="https://nuuk-e3eaa.firebaseapp.com/assets/img/twitter-logo.png" width="15px"
+                                    height="15px" />
+                                <hr class="pnhr">
+                            </div>
+                            <div class="pndiv71"><img
+                                    src=" https://nuuk-e3eaa.firebaseapp.com/assets/img/linkedin-logo.png" width="15px"
+                                    height="15px" />
+                            </div>
+                        </div>
+                        <div class="pndivi2">
+                            <h1 class="pnh13 pnhead1">SARA CONNOR</h1>
+                            <p class="pnp2 pnhead1">Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pnsection3">
+                <div class="pndivis1">
+                    <div class="pndivi4">
+                        <div class="pndivi41">
+                            <h1 class="pnh11">CLIENTS</h1>
+                            <h1 class="pnh12">TESTIMONIALS</h1>
+                            <p class="pnp2">Aenean ut eros et nisl sagittis vestibulum. Fusce neque. Praesent blandit
+                                laoreet nibh. Morbi mollis tellus ac sapien.</p>
+                            <span class="pndiv23">OUR SERVICES</span>
+                        </div>
+                    </div>
+                    <div class="pndivi42">
+                        <section class="pnsect1">
+                            <div class="pndivi5">
+                                <h4 class="pnh6">SARA WILLIAM</h4>
+                                <p class="pnpar1">CEO at Webflow</p>
+                                <p class="pnpar2">"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                    commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                                    imperdiet"</p>
+                                <div class="pndivi43">"</div>
+                            </div>
+                            <div class="pndivi5">
+                                <h4 class="pnh6">JOHN JUNIOR</h4>
+                                <p class="pnpar1">Menager at Complexx</p>
+                                <p class="pnpar2">"Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Cras
+                                    varius. Etiam sit amet orci eget eros faucibus tincidunt. Fusce a quam"</p>
+                                <div class="pndivi43">"</div>
+                            </div>
+                        </section>
+                        <section class="pnsect2">
+                            <div class="pndivi5">
+                                <h4 class="pnh6">RAVEN DURGAN</h4>
+                                <p class="pnpar1">Architect at Group</p>
+                                <p class="pnpar2">"Aliquam eu nunc. Cras dapibus. Vestibulum turpis sem, aliquet eget,
+                                    lobortis pellentesque, rutrum eu, nisl"</p>
+                                <div class="pndivi43">"</div>
+                            </div>
+                            <div class="pndivi5">
+                                <h4 class="pnh6">SAMI TYPO</h4>
+                                <p class="pnpar1">SEO at Balfin</p>
+                                <p class="pnpar2">"Vestibulum fringilla pede sit amet augue. Morbi ac felis. Ut a nisl
+                                    id ante tempus hendrerit"</p>
+                                <div class="pndivi43">"</div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="pndiv21">
+            <section class="pnsec3">
+                <h1 class="pnh11" style="left:-55px">BLOG</h1>
+                <h1 class="pnh12 pndiv91">LASTET NEWS</h1>
+                <div class="pndiv211">VIEW BLOG</div>
+            </section>
+            <section class="pnsec4">
+                <div class="pncl3">
+                    <div><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/port-1.jpg" width=100% /></div>
+                    <div class="pncl4">
+                        <h1 class="pnhead2">BLOGPOST 1</h1>
+                        <p class="pnpar3">Service and providing potential clients and customers with testimonials is one
+                            of the best ways to market.</p>
+                        <div class="pndivi6"><span class="pnid9">READ MORE</span></div>
+                        <div class="pnabs1">
+                            <div class="pnbg2">17</div>
+                            <div class="pnbg3">OCT</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pncl3">
+                    <div><img width=100% src="https://nuuk-e3eaa.firebaseapp.com/assets/img/port-2.jpg" /></div>
+                    <div class="pncl4">
+                        <h1 class="pnhead2">BLOGPOST 1</h1>
+                        <p class="pnpar3">Service and providing potential clients and customers with testimonials is one
+                            of the best ways to market.</p>
+                        <div class="pndivi6"><span class="pnid9">READ MORE</span></div>
+                        <div class="pnabs1">
+                            <div class="pnbg2">11</div>
+                            <div class="pnbg3">DEC</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pncl3">
+                    <div><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/port-3.jpg" width=100% /></div>
+                    <div class="pncl4">
+                        <h1 class="pnhead2">BLOGPOST 1</h1>
+                        <p class="pnpar3">Service and providing potential clients and customers with testimonials is one
+                            of the best ways to market.</p>
+                        <div class="pndivi6"><span class="pnid9">READ MORE</span></div>
+                        <div class="pnabs1">
+                            <div class="pnbg2">27</div>
+                            <div class="pnbg3">OCT</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="pnsection4">
+            <div class="pncl10">TRUSTED BY TOP COMPANIES</div>
+            <div class="pndivi7">
+                <div class="pncl5">LOGO 1</div>
+                <div class="pncl5">LOGO 2</div>
+                <div class="pncl5">LOGO 3</div>
+                <div class="pncl5">LOGO 4</div>
+                <div class="pncl5">LOGO 5</div>
+            </div>
+        </div>
+        <div class="pndiv9">
+            <div class="pn3">
+                <div class="pndiv10">
+                    <h1 class="pnh7">ABOUT NUUK</h1>
+                    <hr class="pnhr1">
+                </div>
+                <p class="pnp9">Based on collective work and shared knowledge, Nuuk aims to favor dialogue and debate, to transform individual knowledge into increased creative potential.</p>
+                <div class="pndivi6"><span class="pnid9">FIND ON MAP</span></div>
+            </div>
+            <div class="pn3">
+                <div class="pndiv10">
+                    <h1 class="pnh7">SERVICES</h1>
+                    <hr class="pnhr1">
+                </div>
+                <div class="pndivi6 pncl9"><span class="pnid9">FINANCIAL RESULTS</span></div>
+                <div class="pndivi6 pncl9"><span class="pnid9">CONSTRUCTION</span></div>
+                <div class="pndivi6 pncl9"><span class="pnid9">ARCHITECTURE</span></div>
+                <div class="pndivi6 pncl9"><span class="pnid9">RENOVATION</span></div>
+            </div>
+            <div class="pn3">
+                <div class="pndiv10">
+                    <h1 class="pnh7">CONTACT US</h1>
+                    <hr class="pnhr1">
+                </div>
+                <div class="pndivis2">
+                    <div class="pncl9">
+                        <div class="pndisp3">
+                            <div class="pnimg3"><img src="  https://nuuk-e3eaa.firebaseapp.com/assets/img/phone.svg"/></div>
+                            <div class="pncol1">PHONE NUMBER</div>
+                        </div>
+                        <p class="pndisp4">1-800-506-266</p>
+                    </div>
+                    <div class="pncl9">
+                        <div class="pndisp3">
+                            <div class="pnimg3"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/clock.svg"></div>
+                            <div class="pncol1">OPENING TIMES</div>
+                        </div>
+                        <p class="pndisp4">Mon - Sat 8:00 - 17:30, Sunday - Closed</p>
+                    </div>
+                    <div class="pncl9">
+                        <div class="pndisp3">
+                            <div class="pnimg3"><img src="https://nuuk-e3eaa.firebaseapp.com/assets/img/mail.svg"></div>
+                            <div class="pncol1">CONTACT</div>
+                        </div>
+                        <p class="pndisp4">contact@nuuk.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pnnuuk pnn"><img class="pnimg"src=" https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-white.png"/></div>
+        </div>
+    </div>
+</body>
+</html>
